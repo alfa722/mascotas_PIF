@@ -1,2 +1,2 @@
 #mascotas_PIF
-https://github.com/alfa722/mascotas_PIF/issues/1#issue-2684767144
+![imagen](https://github.com/user-attachments/assets/a1b2c73e-863a-42ab-a4da-e4fffc8ba59a)
