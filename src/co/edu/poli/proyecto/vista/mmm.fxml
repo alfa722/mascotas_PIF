@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.poli.proyecto.controlador.controlador">
+   <children>
+      <TableView fx:id="tabla" layoutY="334.0" prefHeight="258.0" prefWidth="700.0" />
+      <Label layoutX="301.0" layoutY="14.0" prefHeight="26.0" prefWidth="114.0" text="Adopciones" />
+      <Label layoutX="30.0" layoutY="56.0" prefHeight="26.0" prefWidth="102.0" text="Raza" />
+      <ComboBox fx:id="Raza" layoutX="30.0" layoutY="82.0" prefWidth="150.0" />
+      <DatePicker fx:id="Vacuna" layoutX="30.0" layoutY="136.0" />
+      <Label layoutX="30.0" layoutY="110.0" prefHeight="26.0" prefWidth="150.0" text="Próxima vacuna" />
+      <Label layoutX="30.0" layoutY="169.0" prefHeight="26.0" prefWidth="126.0" text="Nombre de Mascota" />
+      <TextField fx:id="nombre_mascota" layoutX="30.0" layoutY="195.0" promptText="Nombre de la mascota" />
+      <Button fx:id="boton_registrar" layoutX="237.0" layoutY="312.0" mnemonicParsing="false" text="REGISTRAR" onAction="#registrar_dato" />
+     
+      <Button fx:id="boton_buscar" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" text="BUSCAR"  onAction="#buscar_ID" />
+      <Button fx:id="boton_salir" layoutX="629.0" layoutY="12.0" mnemonicParsing="false" text="SALIR"  onAction="#salir" />
+      <RadioButton fx:id="M" layoutX="27.0" layoutY="242.0" mnemonicParsing="false" text="Masculino" toggleGroup="$sexo" />
+      <RadioButton fx:id="F" layoutX="131.0" layoutY="242.0" mnemonicParsing="false" text="Femenino" toggleGroup="$sexo" />
+      <Separator layoutX="328.0" layoutY="36.0" orientation="VERTICAL" prefHeight="266.0" prefWidth="4.0" />
+      <TextField fx:id="buscar" layoutX="81.0" layoutY="15.0" promptText="Buscar..." />
+      <Label layoutX="421.0" layoutY="56.0" prefHeight="26.0" prefWidth="132.0" text="Nombre de Usuario" />
+      <Button fx:id="eliminar" layoutX="347.0" layoutY="312.0" mnemonicParsing="false" text="ELIMINAR" onAction="#eliminar_dato" />
+      <TextField fx:id="usuario" layoutX="416.0" layoutY="77.0" promptText="Nombre Completo" />
+      <RadioButton fx:id="si" layoutX="408.0" layoutY="167.0" mnemonicParsing="false" text="SI" toggleGroup="$edad" />
+      <RadioButton fx:id="no" layoutX="516.0" layoutY="167.0" mnemonicParsing="false" text="NO" toggleGroup="$edad" />
+      <Label layoutX="421.0" layoutY="123.0" prefHeight="26.0" prefWidth="132.0" text="Mayor de Edad" />
+      <Label layoutX="438.0" layoutY="196.0" prefHeight="26.0" prefWidth="132.0" text="Teléfono" />
+      <TextField fx:id="telefono" layoutX="421.0" layoutY="219.0" promptText="+57" />
+   </children>
+</Pane>
+
